@@ -16,6 +16,7 @@
 
 ---
 
+<a id="overview"></a>
 ## 🧩 Overview
 This project is an implementation of the **SAP-1 (Simple As Possible) CPU** using **Logisim Evolution**.  
 It demonstrates the core principles of computer architecture, including fetching, decoding, and executing 8-bit instructions through modular hardware blocks.  
@@ -45,7 +46,6 @@ The SAP-1 consists of these major modules:
 
 - **Memory Address Register (MAR)** — temporarily stores the memory address from which the CPU wants to read or write data.  
   It acts as the bridge between the CPU and RAM.  
-  ![Memory Address Register](https://github.com/NusaibaTahsin328/2008007_SAP1_project/blob/main/mar.png)
 
 - **SRAM** — stores both program instructions and data values.  
   This is the main memory of the SAP-1 where instructions and operands reside.  
@@ -133,5 +133,6 @@ A state counter and decoder combination ensures correct instruction flow and clo
 Department of Electronics and Telecommunication Engineering  
 Chittagong University of Engineering and Technology (CUET)  
 2025
+
 
 
