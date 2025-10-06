@@ -1,7 +1,7 @@
 # SAP-1 CPU (Simple-As-Possible) — Logisim Evolution
 ![CPU Badge](https://img.shields.io/badge/CPU-SAP--1-brightgreen)
 ![Logisim Badge](https://img.shields.io/badge/Tool-Logisim--Evolution-blue)
-![CUET](https://img.shields.io/badge/CUET-ETC-red)
+![CUET](https://img.shields.io/badge/CUET-ETE-red)
 
 ---
 
@@ -9,10 +9,9 @@
 - [Overview](#overview)
 - [Features](#features)
 - [Architecture](#architecture)
-- [Control Unit](#control-unit)
-- [Instruction Set](#instruction-set)
-- [How to Run](#how-to-run)
-- [Author](#author)
+- [Control Unit](#controlunit)
+- [Instruction Set](#instructionset)
+- [How to Run](#howtorun)
 
 ---
 
@@ -78,7 +77,7 @@ A state counter and decoder combination ensures correct instruction flow and clo
 ![State Counter](https://github.com/NusaibaTahsin328/2008007_SAP1_project/blob/main/state_counter.png)
 
 ---
-<a id="Instruction Set"></a>
+<a id="instructionset"></a>
 ## 🧾 Instruction Set
 
 | Mnemonic | Opcode (Hex) | Description |
@@ -95,37 +94,16 @@ A state counter and decoder combination ensures correct instruction flow and clo
 ![Opcode Logic](https://github.com/NusaibaTahsin328/2008007_SAP1_project/blob/main/opcode.png)  
 
 ---
-<a id="How to run"></a>
+<a id="howtorun"></a>
 ## ▶️ How to Run
 1. Open the `.circ` file (`2008007_cs_project.circ`) in **Logisim Evolution**  
 
 2. Load your **ROM program and RAM data together** as one script:
+3. Turn ON the clock and observe each micro-step  
+4. Check Register A, B, and output register for results  
+5. Use the **Auto Load** feature for continuous execution
 
-```text
-# ROM (0–7)
-0: 1A  ; LDA 10
-1: 2B  ; ADD 11
-2: 3C  ; SUB 12
-3: 4D  ; STA 13
-4: 50  ; JMP 0
-5: 70  ; OUT
-6: 00  ; NOP / unused
-7: 00  ; NOP / unused
-
-# RAM (10–15)
-10: 0A
-11: 0B
-12: 0C
-13: 0D
-14: 00
-15: 00
-## ▶️ How to Run
-1. Turn ON the clock and observe each micro-step  
-2. Check Register A, B, and output register for results  
-3. Use the **Auto Load** feature for continuous execution
-
-🎥 **Watch the demonstration video:**  
-[Control Sequencer and Architecture Design of an Automated SAP-1 Microprocessor System](https://youtu.be/2j5gOPioyDY?si=CJrzVuyPzPSJmknV)
+🎥 [Watch the demonstration video on YouTube](https://youtu.be/2j5gOPioyDY?si=CJrzVuyPzPSJmknV)
 
 ---
 <a id="author"></a>
@@ -134,6 +112,7 @@ A state counter and decoder combination ensures correct instruction flow and clo
 Department of Electronics and Telecommunication Engineering  
 Chittagong University of Engineering and Technology (CUET)  
 2025
+
 
 
 
