@@ -42,17 +42,34 @@ The design is based on the Von Neumann architecture and contains an ALU, registe
 
 ## 🧠 Architecture
 The SAP-1 consists of these major modules:
-- **Program Counter (PC)** — holds the address of the next instruction  
-- **Memory Address Register (MAR)** — stores current memory address  
-- **SRAM** — stores program instructions and data  
-- **Instruction Register (IR)** — holds opcode and operand  
-- **Registers (A & B)** — for temporary data storage  
-- **ALU** — performs addition and subtraction  
-- **Control Sequencer** — orchestrates the fetch-decode-execute cycle
 
-![Program Counter](https://github.com/NusaibaTahsin328/2008007_SAP1_project/blob/main/pc.png)  
-![SRAM](https://github.com/NusaibaTahsin328/2008007_SAP1_project/blob/main/sram.png)  
-![Instruction Register](https://github.com/NusaibaTahsin328/2008007_SAP1_project/blob/main/ins%20reg.png)
+- **Program Counter (PC)** — holds the address of the next instruction to be executed.  
+  It increments automatically after each instruction unless a jump occurs.  
+  ![Program Counter](https://github.com/NusaibaTahsin328/2008007_SAP1_project/blob/main/pc.png)
+
+- **Memory Address Register (MAR)** — temporarily stores the memory address from which the CPU wants to read or write data.  
+  It acts as the bridge between the CPU and RAM.  
+  ![Memory Address Register](https://github.com/NusaibaTahsin328/2008007_SAP1_project/blob/main/mar.png)
+
+- **SRAM** — stores both program instructions and data values.  
+  This is the main memory of the SAP-1 where instructions and operands reside.  
+  ![SRAM](https://github.com/NusaibaTahsin328/2008007_SAP1_project/blob/main/sram.png)
+
+- **Instruction Register (IR)** — holds the currently fetched instruction (both opcode and operand).  
+  This allows the control unit to decode and execute the instruction step by step.  
+  ![Instruction Register](https://github.com/NusaibaTahsin328/2008007_SAP1_project/blob/main/ins%20reg.png)
+
+- **Registers (A & B)** — temporary storage for arithmetic operations.  
+  Register A is usually the accumulator, while B is used as a secondary operand.  
+  ![Registers](https://github.com/NusaibaTahsin328/2008007_SAP1_project/blob/main/reg.png)
+
+- **ALU (Arithmetic Logic Unit)** — performs arithmetic operations like ADD and SUB.  
+  It takes inputs from registers A and B and outputs the result back to A or the output register.  
+  ![ALU](https://github.com/NusaibaTahsin328/2008007_SAP1_project/blob/main/ALU.png)
+
+- **Control Sequencer** — a hardwired unit that orchestrates the fetch-decode-execute cycle.  
+  It generates control signals for all other components in a precise timing sequence.  
+  ![Control Sequencer](https://github.com/NusaibaTahsin328/2008007_SAP1_project/blob/main/cs.png)
 
 ---
 
@@ -60,7 +77,7 @@ The SAP-1 consists of these major modules:
 The control unit uses a **hardwired sequencer** that generates timing and control signals (T1–T6) for each micro-operation.  
 A state counter and decoder combination ensures correct instruction flow and clock synchronization.
 
-![Control Sequencer](https://github.com/NusaibaTahsin328/2008007_SAP1_project/blob/main/decoder.png)  
+![Control Sequencer](https://github.com/NusaibaTahsin328/2008007_SAP1_project/blob/main/opcode.png)  
 ![State Counter](https://github.com/NusaibaTahsin328/2008007_SAP1_project/blob/main/state_counter.png)
 
 ---
@@ -79,7 +96,6 @@ A state counter and decoder combination ensures correct instruction flow and clo
 | HLT | F0 | Halt program execution |
 
 ![Opcode Logic](https://github.com/NusaibaTahsin328/2008007_SAP1_project/blob/main/opcode.png)  
-![Opcode Decoder](https://github.com/NusaibaTahsin328/2008007_SAP1_project/blob/main/opcode.png)
 
 ---
 
@@ -121,3 +137,4 @@ A state counter and decoder combination ensures correct instruction flow and clo
 Department of Electronics and Telecommunication Engineering  
 Chittagong University of Engineering and Technology (CUET)  
 2025
+
