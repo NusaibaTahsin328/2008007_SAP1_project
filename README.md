@@ -25,7 +25,7 @@ The design is based on the Von Neumann architecture and contains an ALU, registe
 ![Main Circuit](https://github.com/NusaibaTahsin328/2008007_SAP1_project/blob/main/main.png)
 
 ---
-
+<a id="features"></a>
 ## ⚙️ Features
 - 8-bit data bus, 4-bit address bus  
 - Program Counter, Instruction Register, and Control Sequencer  
@@ -36,6 +36,7 @@ The design is based on the Von Neumann architecture and contains an ALU, registe
 - All components built manually in Logisim (no pre-made components)
 
 ---
+<a id="architecture"></a>
 
 ## 🧠 Architecture
 The SAP-1 consists of these major modules:
@@ -68,7 +69,7 @@ The SAP-1 consists of these major modules:
   ![Control Sequencer](https://github.com/NusaibaTahsin328/2008007_SAP1_project/blob/main/cs.png)
 
 ---
-
+<a id="control unit"></a>
 ## 🕹️ Control Unit
 The control unit uses a **hardwired sequencer** that generates timing and control signals (T1–T6) for each micro-operation.  
 A state counter and decoder combination ensures correct instruction flow and clock synchronization.
@@ -77,7 +78,7 @@ A state counter and decoder combination ensures correct instruction flow and clo
 ![State Counter](https://github.com/NusaibaTahsin328/2008007_SAP1_project/blob/main/state_counter.png)
 
 ---
-
+<a id="Instruction Set"></a>
 ## 🧾 Instruction Set
 
 | Mnemonic | Opcode (Hex) | Description |
@@ -94,7 +95,7 @@ A state counter and decoder combination ensures correct instruction flow and clo
 ![Opcode Logic](https://github.com/NusaibaTahsin328/2008007_SAP1_project/blob/main/opcode.png)  
 
 ---
-
+<a id="How to run"></a>
 ## ▶️ How to Run
 1. Open the `.circ` file (`2008007_cs_project.circ`) in **Logisim Evolution**  
 
@@ -127,12 +128,13 @@ A state counter and decoder combination ensures correct instruction flow and clo
 [Control Sequencer and Architecture Design of an Automated SAP-1 Microprocessor System](https://youtu.be/2j5gOPioyDY?si=CJrzVuyPzPSJmknV)
 
 ---
-
+<a id="author"></a>
 ## ✍️ Author
 **Nusaiba Tahsin**  
 Department of Electronics and Telecommunication Engineering  
 Chittagong University of Engineering and Technology (CUET)  
 2025
+
 
 
 
