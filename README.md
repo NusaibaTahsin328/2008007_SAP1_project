@@ -12,7 +12,6 @@
 - [Control Unit](#control-unit)
 - [Instruction Set](#instruction-set)
 - [How to Run](#how-to-run)
-- [Future Work](#future-work)
 - [Author](#author)
 
 ---
@@ -34,9 +33,6 @@ The design is based on the Von Neumann architecture and contains an ALU, registe
 - Step-by-step and auto clock execution modes  
 - Fully modular design with labeled subcircuits  
 - All components built manually in Logisim (no pre-made components)
-
-![Registers](https://github.com/NusaibaTahsin328/2008007_SAP1_project/blob/main/reg.png)  
-![ALU](https://github.com/NusaibaTahsin328/2008007_SAP1_project/blob/main/ALU.png)
 
 ---
 
@@ -137,4 +133,5 @@ A state counter and decoder combination ensures correct instruction flow and clo
 Department of Electronics and Telecommunication Engineering  
 Chittagong University of Engineering and Technology (CUET)  
 2025
+
 
