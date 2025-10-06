@@ -69,7 +69,7 @@ The SAP-1 consists of these major modules:
   ![Control Sequencer](https://github.com/NusaibaTahsin328/2008007_SAP1_project/blob/main/cs.png)
 
 ---
-<a id="control unit"></a>
+<a id="controlunit"></a>
 ## 🕹️ Control Unit
 The control unit uses a **hardwired sequencer** that generates timing and control signals (T1–T6) for each micro-operation.  
 A state counter and decoder combination ensures correct instruction flow and clock synchronization.
@@ -134,6 +134,7 @@ A state counter and decoder combination ensures correct instruction flow and clo
 Department of Electronics and Telecommunication Engineering  
 Chittagong University of Engineering and Technology (CUET)  
 2025
+
 
 
 
